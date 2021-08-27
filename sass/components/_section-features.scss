@@ -1,0 +1,34 @@
+.features {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__icon {
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    background-color: $section-team-bg-color;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
