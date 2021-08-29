@@ -1,4 +1,7 @@
 .activities {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   display: flex;
 
   &__item:not(:last-child) {

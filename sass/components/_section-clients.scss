@@ -1,12 +1,18 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 
   &__item {
-    width: 170px;
     height: 92px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 12 * 15px) / 6);
     }
   }
   &__link {

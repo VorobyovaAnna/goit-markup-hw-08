@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   background-color: $primary-white-color;
   color: $primary-text-color;
 
@@ -8,15 +9,34 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.icon {
+  fill: currentColor;
 }
 .logo {
   color: $accent-color;
   font-family: Raleway, sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   text-decoration: none;
 
@@ -26,16 +46,11 @@ body {
   &--light-colored {
     color: $primary-white-color;
   }
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+  }
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.icon {
-  fill: currentColor;
-}
 /* Button */
 .button {
   border-color: transparent;
@@ -85,8 +100,12 @@ body {
     margin-bottom: 50px;
     color: $title-text-color;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+    }
   }
 }

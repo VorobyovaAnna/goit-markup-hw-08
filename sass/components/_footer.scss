@@ -3,16 +3,33 @@
   background-color: $hero-bg-color;
 
   &__content {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__address {
     font-style: normal;
     color: $primary-white-color;
     margin-top: 20px;
 
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    &-item {
+      height: 21px;
+    }
+
     &-item:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
+      }
     }
     &-link {
       font-size: 14px;
@@ -36,12 +53,18 @@
 
     color: $primary-white-color;
   }
-
   &__social-block {
-    padding-top: 12px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 12px;
+    }
   }
   &__social-networks {
     display: flex;
+    justify-content: center;
 
     &-item {
       width: 44px;
@@ -69,8 +92,11 @@
     }
   }
   &__sign-up-block {
-    padding-top: 12px;
+    @media screen and (min-width: $desktop) {
+      padding-top: 12px;
+    }
   }
+
   &__input {
     width: 358px;
     height: 50px;
@@ -88,6 +114,9 @@
     border-radius: 4px;
 
     background-color: inherit;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
   }
   &__button-text {
     margin-right: 10px;

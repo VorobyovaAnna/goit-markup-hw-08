@@ -1,8 +1,23 @@
 .features {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  &__item {
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+  }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
   &__icon {
     margin-bottom: 30px;
@@ -11,7 +26,6 @@
     align-items: center;
     justify-content: center;
 
-    width: 270px;
     height: 120px;
     background-color: $section-team-bg-color;
   }
