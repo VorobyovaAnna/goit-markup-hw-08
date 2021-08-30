@@ -113,19 +113,19 @@
                 <ul class="activities list">
                     <li class="activities__item">
                         <div class="activities__thumb">
-                            <img src="./images/box1-new.jpg" alt="Код десктопного приложения" width="370">
+                            <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg" alt="Код десктопного приложения" width="370">
                             <p class="activities__label">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="activities__item">
                         <div class="activities__thumb">
-                            <img src="./images/box2-new.jpg" alt="Мобильный телефон в руке на фоне экрана ноутбука" width="370">
+                            <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg" alt="Мобильный телефон в руке на фоне экрана ноутбука" width="370">
                             <p class="activities__label">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="activities__item">
                         <div class="activities__thumb">
-                            <img src="./images/box3-new.jpg" alt="Гамма цветов" width="370">
+                            <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg" alt="Гамма цветов" width="370">
                             <p class="activities__label">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -137,7 +137,24 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="member list">
                     <li class="member__item">
-                        <img class="member__image" src="./images/img1-new.jpg" alt="Портретное фото Игоря Демьяненко" width="270">
+                        <picture>
+                        <source srcset="
+                                            ./images/img1-mobile.jpg    1x,
+                                            ./images/img1-mobile@2x.jpg 2x
+                                          " media="(max-width: 767px)" type="image/jpeg" />
+                        
+                        <source srcset="
+                                            ./images/img1-desktop.jpg    1x,
+                                            ./images/img1-desktop@2x.jpg 2x
+                                          " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                        <source srcset="
+                                            ./images/img1-tablet.jpg    1x,
+                                            ./images/img1-tablet@2x.jpg 2x 2x
+                                          " media="(min-width: 768px)" type="image/jpeg" />
+                        
+                        <img class="member__image" src="./images/img1-desktop.jpg" alt="Портретное фото Игоря Демьяненко" width="270" />
+                        </picture>
                         <div class="member__wrapper">
                             <h3 class="member__title">Игорь Демьяненко</h3>
                             <p class="member__position">Product Designer</p>
@@ -174,7 +191,23 @@
                         </div>
                     </li>
                     <li class="member__item">
-                        <img class="member__image" src="./images/img2-new.jpg" alt="Портретное фото Ольги Репиной" width="270">
+                        <picture>
+                            <source srcset="
+                                            ./images/img2-mobile.jpg    1x,
+                                            ./images/img2-mobile@2x.jpg 2x
+                                            " media="(max-width: 767px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                            ./images/img2-desktop.jpg    1x,
+                                            ./images/img2-desktop@2x.jpg 2x
+                                            " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                            ./images/img2-tablet.jpg    1x,
+                                            ./images/img2-tablet@2x.jpg 2x 2x
+                                            " media="(min-width: 768px)" type="image/jpeg" />                 
+                            <img class="member__image" src="./images/img2-desktop.jpg" alt="Портретное фото Ольги Репиной" width="270" />
+                        </picture>
                         <div class="member__wrapper">
                             <h3 class="member__title">Ольга Репина</h3>
                             <p class="member__position">Frontend Developer</p>
@@ -211,7 +244,23 @@
                         </div>
                     </li>
                     <li class="member__item">
-                        <img class="member__image" src="./images/img3-new.jpg" alt="Портретное фото Николая Тарасова" width="270">
+                        <picture>
+                            <source srcset="
+                                            ./images/img3-mobile.jpg    1x,
+                                            ./images/img3-mobile@2x.jpg 2x
+                                            " media="(max-width: 767px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                            ./images/img3-desktop.jpg    1x,
+                                            ./images/img3-desktop@2x.jpg 2x
+                                            " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                            ./images/img3-tablet.jpg    1x,
+                                            ./images/img3-tablet@2x.jpg 2x 2x
+                                            " media="(min-width: 768px)" type="image/jpeg" />
+                            <img class="member__image" src="./images/img3-desktop.jpg" alt="Портретное фото Николая Тарасова" width="270" />
+                        </picture>
                         <div class="member__wrapper">
                             <h3 class="member__title">Николай Тарасов</h3>
                             <p class="member__position">Marketing</p>
@@ -248,7 +297,23 @@
                         </div>
                     </li>
                     <li class="member__item">
-                        <img class="member__image" src="./images/img4-new.jpg" alt="Портретное фото Михаила Ермакова" width="270">
+                        <picture>
+                            <source srcset="
+                                            ./images/img4-mobile.jpg    1x,
+                                            ./images/img4-mobile@2x.jpg 2x
+                                            " media="(max-width: 767px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                            ./images/img4-desktop.jpg    1x,
+                                            ./images/img4-desktop@2x.jpg 2x
+                                            " media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="
+                                            ./images/img4-tablet.jpg    1x,
+                                            ./images/img4-tablet@2x.jpg 2x 2x
+                                            " media="(min-width: 768px)" type="image/jpeg" />
+                            <img class="member__image" src="./images/img4-desktop.jpg" alt="Портретное фото Михаила Ермакова" width="270" />
+                        </picture>
                         <div class="member__wrapper">
                             <h3 class="member__title">Михаил Ермаков</h3>
                             <p class="member__position">UI Designer</p>
