@@ -773,7 +773,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer__social-block {
     width: 50%;
-    padding-top: 5px;
+    margin-top: 5px;
   }
 }
 
