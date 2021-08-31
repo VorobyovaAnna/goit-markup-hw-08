@@ -6,10 +6,18 @@
     @media screen and (max-width: 1199px) {
       text-align: center;
     }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     @media screen and (min-width: $desktop) {
-      display: flex;
       justify-content: space-between;
+    }
+  }
+  &__logo-address {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      width: 50%;
     }
   }
   &__address {
@@ -57,6 +65,10 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 60px;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      width: 50%;
+      padding-top: 5px;
+    }
 
     @media screen and (min-width: $desktop) {
       padding-top: 12px;
@@ -92,13 +104,22 @@
     }
   }
   &__sign-up-block {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      margin: 55px auto 0;
+    }
+
+    @media screen and (max-width: $desktop) {
+      text-align: center;
+      width: 450px;
+    }
+
     @media screen and (min-width: $desktop) {
       padding-top: 12px;
     }
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     margin-right: 12px;
     padding: 15px 16px;
@@ -114,8 +135,14 @@
     border-radius: 4px;
 
     background-color: inherit;
+
+    @media screen and (min-width: $desktop) {
+      width: 450px;
+    }
+  }
+  & .button {
     @media screen and (max-width: 1199px) {
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
   }
   &__button-text {
